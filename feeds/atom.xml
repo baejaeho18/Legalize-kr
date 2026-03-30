@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>legalize-kr — 대한민국 법령 변경 추적</title>
+  <subtitle>대한민국 법률의 모든 개정 이력을 Git으로 추적합니다</subtitle>
+  <id>https://github.com/baejaeho18/Legalize-kr</id>
+  <link href="https://github.com/baejaeho18/Legalize-kr/atom.xml" rel="self"/>
+  <link href="https://github.com/baejaeho18/Legalize-kr" rel="alternate"/>
+  <updated>2026-03-30T21:33:09Z</updated>
+  <author>
+    <name>legalize-kr</name>
+  </author>
+  <generator>legalize-kr</generator>
+</feed>
