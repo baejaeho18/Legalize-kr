@@ -89,8 +89,9 @@ def law_to_markdown(
         if assembly_meta.get("proc_result"):
             lines.append(f"  처리결과: \"{assembly_meta['proc_result']}\"")
         if assembly_meta.get("legislators"):
+            lines.append(f"  발의의원수: {len(assembly_meta['legislators'])}")
             lines.append("  발의의원:")
-            for leg in assembly_meta["legislators"][:20]:
+            for leg in assembly_meta["legislators"]:
                 role_tag = " (대표)" if leg.get("role") == "대표발의" else ""
                 party_tag = f" [{leg['party']}]" if leg.get("party") else ""
                 lines.append(f"    - \"{leg['name']}{party_tag}{role_tag}\"")
@@ -188,14 +189,32 @@ def generate_commit_message(
     if assembly_meta:
         body_lines.append("")
         body_lines.append("[국회 정보]")
-        if assembly_meta.get("rst_proposer"):
-            body_lines.append(f"대표발의: {assembly_meta['rst_proposer']}")
-        if assembly_meta.get("proposer"):
-            body_lines.append(f"제안자: {assembly_meta['proposer']}")
         if assembly_meta.get("committee"):
             body_lines.append(f"소관위원회: {assembly_meta['committee']}")
         if assembly_meta.get("proc_result"):
             body_lines.append(f"처리결과: {assembly_meta['proc_result']}")
+
+        # 발의의원 전원 나열
+        legislators = assembly_meta.get("legislators", [])
+        if legislators:
+            lead = [l for l in legislators if l.get("role") == "대표발의"]
+            co = [l for l in legislators if l.get("role") != "대표발의"]
+
+            body_lines.append("")
+            body_lines.append(f"[발의의원 ({len(legislators)}명)]")
+            if lead:
+                l = lead[0]
+                party = f" ({l['party']})" if l.get("party") else ""
+                body_lines.append(f"대표발의: {l['name']}{party}")
+            if co:
+                names = [
+                    f"{l['name']} ({l['party']})" if l.get("party") else l["name"]
+                    for l in co
+                ]
+                body_lines.append(f"공동발의: {', '.join(names)}")
+        elif assembly_meta.get("proposer"):
+            # legislators 못 가져온 경우 fallback
+            body_lines.append(f"제안자: {assembly_meta['proposer']}")
 
     body = "\n".join(body_lines)
     return f"{subject}\n\n{body}" if body_lines else subject

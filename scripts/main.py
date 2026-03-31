@@ -110,6 +110,75 @@ def _extract_author(assembly_meta: dict, detail) -> tuple[str, str]:
     return DEFAULT
 
 
+def _build_vote_commit_message(law_name: str, vote_meta: dict) -> str:
+    """
+    표결 메타데이터 커밋 메시지를 생성한다.
+
+    요약 + 정당별 소계 + 의원별 전체 투표 테이블을 포함한다.
+    형식:
+      meta: 표결 갱신 — {법령명}
+
+      [표결 결과]
+      일시: 2024-01-15
+      결과: 가결 (찬성 240 / 반대 35 / 기권 10 / 불참 14)
+
+      [정당별]
+      더불어민주당: 찬성 120, 반대 5, 기권 2, 불참 3
+      국민의힘: 찬성 100, 반대 28, 기권 7, 불참 10
+      ...
+
+      [의원별 표결 (300명)]
+      이름 (정당): 투표
+      ...
+    """
+    subject = f"meta: 표결 갱신 — {law_name}"
+
+    lines = []
+    lines.append("[표결 결과]")
+    if vote_meta.get("vote_date"):
+        lines.append(f"일시: {vote_meta['vote_date']}")
+    result = vote_meta.get("result", "")
+    yes = vote_meta.get("yes", 0)
+    no = vote_meta.get("no", 0)
+    abstain = vote_meta.get("abstain", 0)
+    absent = vote_meta.get("absent", 0)
+    lines.append(f"결과: {result} (찬성 {yes} / 반대 {no} / 기권 {abstain} / 불참 {absent})")
+
+    # 정당별 소계
+    party_summary = vote_meta.get("party_summary", {})
+    if party_summary:
+        lines.append("")
+        lines.append("[정당별]")
+        for party, counts in sorted(party_summary.items(), key=lambda x: -sum(x[1].values())):
+            parts = []
+            for k in ["찬성", "반대", "기권", "불참"]:
+                v = counts.get(k, 0)
+                if v:
+                    parts.append(f"{k} {v}")
+            lines.append(f"{party}: {', '.join(parts)}")
+
+    # 의원별 전체 테이블
+    member_votes = vote_meta.get("member_votes", [])
+    if member_votes:
+        lines.append("")
+        lines.append(f"[의원별 표결 ({len(member_votes)}명)]")
+        # 정당별로 그룹핑, 각 정당 내에서 이름순
+        by_party = {}
+        for mv in member_votes:
+            party = mv.get("party", "무소속")
+            if party not in by_party:
+                by_party[party] = []
+            by_party[party].append(mv)
+
+        for party in sorted(by_party.keys()):
+            members = sorted(by_party[party], key=lambda x: x.get("name", ""))
+            for mv in members:
+                lines.append(f"{mv['name']} ({party}): {mv.get('vote', '?')}")
+
+    body = "\n".join(lines)
+    return f"{subject}\n\n{body}"
+
+
 # ──────────────────────────────────────────────
 # 핵심 처리 로직
 # ──────────────────────────────────────────────
@@ -194,10 +263,12 @@ def process_single_law(
                 include_member_votes=True,
             )
             if vote_meta:
+                vote_commit_msg = _build_vote_commit_message(detail.name, vote_meta)
                 committer.commit_metadata(
                     law_name=detail.name,
                     meta_type="votes",
                     data=vote_meta,
+                    commit_message=vote_commit_msg,
                 )
         except Exception as e:
             logger.warning(f"표결 정보 조회 실패: {e}")
