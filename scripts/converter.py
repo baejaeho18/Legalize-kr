@@ -155,9 +155,15 @@ def law_to_markdown(
 
 
 def generate_filename(detail: LawDetail) -> str:
-    """법령 파일명 생성. 형식: {법령일련번호}-{법령명}.md"""
+    """
+    법령 파일명 생성. 형식: {법령ID}-{법령명}.md
+
+    law_id(법령ID)는 개정되어도 변하지 않으므로,
+    같은 법령의 모든 개정이 하나의 파일을 덮어쓰게 된다.
+    → git blame으로 각 조문을 누가 개정했는지 추적 가능.
+    """
     safe_name = _sanitize_filename(detail.name)
-    return f"{detail.serial_no}-{safe_name}.md"
+    return f"{detail.law_id}-{safe_name}.md"
 
 
 def generate_commit_message(

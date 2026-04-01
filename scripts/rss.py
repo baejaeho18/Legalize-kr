@@ -64,11 +64,13 @@ def extract_entries_from_git(
     """
     Git 커밋 로그에서 RSS 피드 항목을 추출한다.
     """
+    # 구분자로 일반 텍스트에 나타나지 않는 문자열 사용
+    SEP = "<<|>>"
     cmd = [
         "git", "-C", repo_path,
         "log",
         f"--max-count={max_entries}",
-        "--format=%H|%aI|%s|%b",
+        f"--format=%H{SEP}%aI{SEP}%s{SEP}%b",
         "--", f"{LAWS_DIR}/*.md",
     ]
 
@@ -86,7 +88,7 @@ def extract_entries_from_git(
         if not line.strip():
             continue
 
-        parts = line.split("|", 3)
+        parts = line.split(SEP, 3)
         if len(parts) < 3:
             continue
 

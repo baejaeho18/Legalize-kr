@@ -38,7 +38,7 @@ def _get(key: str, env_key: str = "", default: str = "") -> str:
 # ──────────────────────────────────────────────
 # 국가법령정보 공동활용 API (open.law.go.kr)
 # ──────────────────────────────────────────────
-LAW_API_BASE = "http://www.law.go.kr/DRF"
+LAW_API_BASE = "https://www.law.go.kr/DRF"
 LAW_API_OC = _get("LAW_API_OC", "LAW_API_OC", "test")
 
 # 법령 검색 API

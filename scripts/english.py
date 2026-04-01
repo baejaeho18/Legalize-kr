@@ -273,11 +273,12 @@ def english_law_to_markdown(detail: EnglishLawDetail) -> str:
 
 
 def generate_english_filename(detail: EnglishLawDetail) -> str:
-    """영문 법령 파일명 생성"""
+    """영문 법령 파일명 생성. law_id 기반으로 개정 시 같은 파일을 덮어쓴다."""
     name = detail.name_en or detail.name_kr
     safe_name = re.sub(r'[<>:"/\\|?*]', "", name)
     safe_name = safe_name.replace(" ", "_")[:80]
-    return f"{detail.serial_no}-{safe_name}.md"
+    law_id = getattr(detail, "law_id", detail.serial_no)
+    return f"{law_id}-{safe_name}.md"
 
 
 # ──────────────────────────────────────────────

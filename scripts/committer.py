@@ -217,8 +217,10 @@ class GitCommitter:
         """전체 커밋 수를 반환한다."""
         try:
             result = self._run_git("rev-list", "--count", "HEAD")
+            if result.returncode != 0:
+                return 0
             return int(result.stdout.strip())
-        except Exception:
+        except (Exception, ValueError):
             return 0
 
     def _run_git(self, *args, env=None) -> subprocess.CompletedProcess:

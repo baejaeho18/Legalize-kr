@@ -699,8 +699,8 @@ def main():
     parser.add_argument("--limit", type=int, default=0,
                         help="처리할 최대 법령 수 (테스트용)")
     parser.add_argument("--sort", type=str, default="lasc",
-                        choices=["lasc", "ldesc", "pasc", "pdesc", "efasc", "efdesc"],
-                        help="정렬 (lasc=법령명↑, pdesc=공포일↓최신순, pasc=공포일↑오래된순)")
+                        choices=["lasc", "ldes", "dasc", "ddes", "efasc", "efdes"],
+                        help="정렬 (lasc=법령명↑, ddes=공포일↓최신순, dasc=공포일↑오래된순)")
     parser.add_argument("--max-cases", type=int, default=20,
                         help="판례 최대 수집 건수 (기본: 20)")
     parser.add_argument("--repo", type=str, default=".",
