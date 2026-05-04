@@ -377,6 +377,138 @@ def process_law_history(
     return count
 
 
+def init_with_history(
+    committer: GitCommitter,
+    repo_path: str,
+    law_kind: str = "법률",
+    include_assembly: bool = False,
+    include_votes: bool = False,
+    limit: int = 0,
+    push_every: int = 50,
+) -> dict:
+    """
+    모든 법령에 대해 모든 시행일자별 버전(연혁)을 시간순으로 backfill한다.
+
+    동작:
+      1) fetch_all_laws로 현행 법령 목록 수집
+      2) 각 법령(LID)마다 fetch_law_history → 모든 버전을 시간순 처리
+      3) 이미 .md 파일이 존재하는 LID는 스킵(중단 후 재시작 시 이어서)
+      4) push_every개 법령마다 origin push
+
+    이미 처리된 법령 스킵 기준: korea/**/{LID}-*.md 파일 존재 여부.
+    부분 처리(history 일부만 들어간 LID)는 강제 재처리하므로
+    완전한 backfill을 보장하려면 미처리 LID 디렉토리는 비워두라.
+    """
+    logger.info("=== 전체 법령 history backfill 시작 ===")
+
+    laws = fetch_all_laws(law_kind=law_kind)
+    if limit:
+        laws = laws[:limit]
+
+    # LID 기준 dedup (현행 목록은 한 LID당 1건이라 보통 dedup 불필요지만 안전망)
+    seen_lids = set()
+    unique_laws = []
+    for l in laws:
+        if l.law_id and l.law_id not in seen_lids:
+            seen_lids.add(l.law_id)
+            unique_laws.append(l)
+    laws = unique_laws
+
+    # 이미 .md가 있는 LID 스킵 (resume 지원)
+    existing_lids = _scan_existing_lids(repo_path)
+    if existing_lids:
+        logger.info(f"이미 처리된 LID {len(existing_lids)}건 스킵")
+
+    total = len(laws)
+    processed = skipped = errors = total_commits = 0
+
+    for i, law in enumerate(laws, 1):
+        if law.law_id in existing_lids:
+            skipped += 1
+            continue
+
+        logger.info(f"[{i}/{total}] {law.name} (LID={law.law_id})")
+        try:
+            history = fetch_law_history(law.law_id)
+            if not history:
+                logger.warning(f"  연혁 없음: {law.name}")
+                errors += 1
+                continue
+
+            commits = 0
+            for version in history:
+                try:
+                    if process_single_law(
+                        version, committer,
+                        include_assembly=include_assembly,
+                        include_votes=include_votes,
+                        force=True,
+                    ):
+                        commits += 1
+                except Exception as e:
+                    logger.error(f"  버전 실패 ({version.promul_date}): {e}")
+
+            logger.info(f"  → {commits}/{len(history)}건 커밋")
+            total_commits += commits
+            processed += 1
+        except Exception as e:
+            logger.error(f"법령 실패: {law.name} — {e}")
+            errors += 1
+
+        # 주기적 push
+        if i % push_every == 0:
+            logger.info(f"=== 진행 {i}/{total} — push ===")
+            _safe_push(repo_path)
+
+    # 마지막 push
+    logger.info("=== backfill 종료 — 최종 push ===")
+    _safe_push(repo_path)
+
+    return {
+        "total": total,
+        "processed": processed,
+        "skipped": skipped,
+        "errors": errors,
+        "commits": total_commits,
+    }
+
+
+def _scan_existing_lids(repo_path: str) -> set[int]:
+    """korea/ 안의 .md 파일에서 이미 처리된 LID 집합을 추출."""
+    import subprocess as _sp
+    korea = Path(repo_path) / "korea"
+    if not korea.exists():
+        return set()
+    lids = set()
+    for md in korea.rglob("*.md"):
+        # 파일명: {LID}-{name}.md
+        stem = md.stem
+        if "-" in stem:
+            head = stem.split("-", 1)[0]
+            if head.isdigit():
+                lids.add(int(head))
+    return lids
+
+
+def _safe_push(repo_path: str) -> bool:
+    """origin/main에 push 시도. 실패해도 backfill은 계속."""
+    import subprocess as _sp
+    try:
+        result = _sp.run(
+            ["git", "-C", str(repo_path), "push", "origin", "main"],
+            capture_output=True, text=True, timeout=120,
+            encoding="utf-8", errors="replace",
+        )
+        if result.returncode == 0:
+            logger.info("  push 완료")
+            return True
+        logger.warning(f"  push 실패 (rc={result.returncode}): {result.stderr.strip()[:200]}")
+        return False
+    except Exception as e:
+        logger.warning(f"  push 예외: {e}")
+        return False
+
+
 def init_full_build(
     committer: GitCommitter,
     law_kind: str = "",
@@ -683,7 +815,9 @@ def main():
 
     action = parser.add_mutually_exclusive_group(required=True)
     action.add_argument("--init", action="store_true",
-                        help="전체 현행법령 초기 구축")
+                        help="전체 현행법령 초기 구축 (현행 1버전만)")
+    action.add_argument("--init-history", action="store_true",
+                        help="전체 법령의 모든 연혁을 시간순으로 backfill (push_every 단위로 자동 push)")
     action.add_argument("--update", action="store_true",
                         help="최근 변경된 법령만 업데이트")
     action.add_argument("--history", action="store_true",
@@ -723,6 +857,8 @@ def main():
                         help="판례 최대 수집 건수 (기본: 20)")
     parser.add_argument("--repo", type=str, default=".",
                         help="Git 저장소 경로 (기본: 현재 디렉토리)")
+    parser.add_argument("--push-every", type=int, default=50,
+                        help="--init-history에서 N개 법령마다 origin push (기본: 50)")
     parser.add_argument("--base-url", type=str, default="",
                         help="GitHub 저장소 URL (RSS 피드용)")
 
@@ -745,6 +881,21 @@ def main():
         )
         print_stats(committer, repo_path)
         print(f"초기 구축 완료: {count}건 커밋")
+
+    elif args.init_history:
+        result = init_with_history(
+            committer, repo_path,
+            law_kind=args.kind or "법률",
+            include_assembly=args.assembly,
+            include_votes=args.votes,
+            limit=args.limit,
+            push_every=args.push_every,
+        )
+        print(
+            f"backfill 완료: 전체 {result['total']}, "
+            f"처리 {result['processed']}, 스킵 {result['skipped']}, "
+            f"실패 {result['errors']}, 커밋 {result['commits']}"
+        )
 
     elif args.update:
         count = update_recent(
