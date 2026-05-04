@@ -330,21 +330,27 @@ def process_law_history(
     """
     logger.info(f"=== 법령 연혁 재구축: {law_name} ===")
 
-    laws, _ = fetch_law_list(query=law_name, display=20)
-    if not laws:
+    # 모든 페이지 검색 (open.law.go.kr는 substring 매칭이라 정확매칭이
+    # 첫 페이지에 없는 경우가 흔함. 예: "상법"으로 검색하면 가나다순
+    # "1980년해직공무원…법"이 1번)
+    from fetcher import fetch_all_laws
+    all_laws = fetch_all_laws(query=law_name)
+    if not all_laws:
         logger.error(f"법령을 찾을 수 없음: {law_name}")
         return 0
 
-    # 정확히 같은 법령명 우선, 없으면 첫 번째 매칭
     target = next(
-        (l for l in laws if l.name == law_name and l.law_type == "법률"),
+        (l for l in all_laws if l.name == law_name and l.law_type == "법률"),
         None,
     )
     if not target:
-        target = next((l for l in laws if l.name == law_name), None)
+        target = next((l for l in all_laws if l.name == law_name), None)
     if not target:
-        target = laws[0]
-        logger.warning(f"정확 매칭 없음 — 첫 결과 사용: {target.name}")
+        logger.error(
+            f"정확 매칭 없음 (전체 {len(all_laws)}건): '{law_name}' — "
+            f"--law-id로 LID 직접 지정 필요"
+        )
+        return 0
 
     logger.info(f"대상 법령: {target.name} (ID={target.law_id}, type={target.law_type})")
 
