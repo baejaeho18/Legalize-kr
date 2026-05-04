@@ -1,0 +1,116 @@
+# ──────────────────────────────────────────────
+# legalize-kr: 매일 법령 자동 업데이트
+# ──────────────────────────────────────────────
+# 매일 UTC 21:00 (한국 시간 06:00)에 실행하여
+# 최근 공포된 법령을 자동으로 수집, 변환, 커밋한다.
+# 후처리(피드/인덱스/상호참조)도 함께 수행한다.
+
+name: 법령 자동 업데이트
+
+on:
+  schedule:
+    # 매일 UTC 21:00 = KST 06:00
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '검색할 일수'
+        required: false
+        default: '7'
+      include_assembly:
+        description: '국회 메타데이터 포함'
+        required: false
+        type: boolean
+        default: true
+      include_votes:
+        description: '표결 정보 포함'
+        required: false
+        type: boolean
+        default: true
+      postprocess:
+        description: '후처리 실행 (피드/인덱스/상호참조)'
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  update-laws:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 전체 히스토리 필요
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      - name: Git 설정
+        run: |
+          git config user.name "legalize-kr[bot]"
+          git config user.email "legalize-kr[bot]@users.noreply.github.com"
+
+      - name: 법령 업데이트 실행
+        env:
+          LAW_API_OC: ${{ secrets.LAW_API_OC }}
+          ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
+        run: |
+          DAYS=${{ github.event.inputs.days || '7' }}
+          FLAGS=""
+          if [ "${{ github.event.inputs.include_assembly }}" = "true" ] || [ -z "${{ github.event.inputs.include_assembly }}" ]; then
+            FLAGS="$FLAGS --assembly"
+          fi
+          if [ "${{ github.event.inputs.include_votes }}" = "true" ] || [ -z "${{ github.event.inputs.include_votes }}" ]; then
+            FLAGS="$FLAGS --votes"
+          fi
+
+          cd $GITHUB_WORKSPACE
+          python scripts/main.py --update --days $DAYS $FLAGS --repo .
+
+      - name: 후처리 (피드/인덱스/상호참조)
+        if: ${{ github.event.inputs.postprocess != 'false' }}
+        env:
+          GITHUB_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          cd $GITHUB_WORKSPACE
+          python scripts/main.py --postprocess --repo . --base-url "$GITHUB_REPO_URL"
+
+      - name: 후처리 결과 커밋
+        run: |
+          cd $GITHUB_WORKSPACE
+          if [ -d "metadata" ]; then
+            git add metadata/ feeds/ 2>/dev/null || true
+            if [ -n "$(git diff --cached --name-only)" ]; then
+              git commit -m "chore: 메타데이터/피드/인덱스 갱신 ($(date +%Y-%m-%d))"
+            fi
+          fi
+
+      - name: 변경사항 푸시
+        run: |
+          if [ -n "$(git log origin/main..HEAD --oneline 2>/dev/null)" ]; then
+            git push origin main
+            echo "법령 업데이트 푸시 완료"
+          else
+            echo "변경사항 없음"
+          fi
+
+      - name: 통계 출력
+        run: |
+          echo "=== legalize-kr 통계 ==="
+          echo "법령 파일 수: $(find korea/ -name '*.md' 2>/dev/null | wc -l)"
+          echo "영문 법령 수: $(find korea-en/ -name '*.md' 2>/dev/null | wc -l)"
+          echo "전체 커밋 수: $(git rev-list --count HEAD)"
+          echo "메타데이터: $(find metadata/ -name '*.json' 2>/dev/null | wc -l)개 파일"
+          echo "RSS 피드: $(find feeds/ -name '*.xml' 2>/dev/null | wc -l)개 피드"
+          echo "최근 커밋:"
+          git log --oneline -5
