@@ -1,0 +1,912 @@
+<?xml version="1.0" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>legalize-kr — 갱신</title>
+    <description>대한민국 법률의 모든 개정 이력을 Git으로 추적합니다</description>
+    <link>https://github.com/baejaeho18/Legalize-kr</link>
+    <language>ko</language>
+    <lastBuildDate>Tue, 05 May 2026 03:25:43 +0000</lastBuildDate>
+    <generator>legalize-kr</generator>
+    <atom:link href="https://github.com/baejaeho18/Legalize-kr/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/d9ffa50b12d13c25d1fb1e2de5456dda43fe9979</link>
+      <description>공포일자: 2026-02-19</description>
+      <pubDate>Thu, 19 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>d9ffa50b12d13c25d1fb1e2de5456dda43fe9979</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/af533642bca3c7ff3ce6364436598f6f2b10f957</link>
+      <description>공포일자: 2025-10-01</description>
+      <pubDate>Wed, 01 Oct 2025 12:00:00 +0900</pubDate>
+      <guid>af533642bca3c7ff3ce6364436598f6f2b10f957</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/86f9e09b1732ffb15a5a8adbed175fe1c4e737fa</link>
+      <description>공포일자: 2025-03-18</description>
+      <pubDate>Tue, 18 Mar 2025 12:00:00 +0900</pubDate>
+      <guid>86f9e09b1732ffb15a5a8adbed175fe1c4e737fa</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/7ec7642c9b304837bb0917ae6f723d02992027f1</link>
+      <description>공포일자: 2021-12-28</description>
+      <pubDate>Tue, 28 Dec 2021 12:00:00 +0900</pubDate>
+      <guid>7ec7642c9b304837bb0917ae6f723d02992027f1</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/44ac8533069c1a370dce6abe8d927c57e66d5377</link>
+      <description>공포일자: 2021-09-24</description>
+      <pubDate>Fri, 24 Sep 2021 12:00:00 +0900</pubDate>
+      <guid>44ac8533069c1a370dce6abe8d927c57e66d5377</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/608839acb64cf55b847a01105bbcda565813308b</link>
+      <description>공포일자: 2021-06-08</description>
+      <pubDate>Tue, 08 Jun 2021 12:00:00 +0900</pubDate>
+      <guid>608839acb64cf55b847a01105bbcda565813308b</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/347edfd9a0448709e409c6ab32ccef64c127c230</link>
+      <description>공포일자: 2021-03-23</description>
+      <pubDate>Tue, 23 Mar 2021 12:00:00 +0900</pubDate>
+      <guid>347edfd9a0448709e409c6ab32ccef64c127c230</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/94ad3e17d4bf3c421a211fa837cd898da13850ea</link>
+      <description>공포일자: 2020-10-20</description>
+      <pubDate>Tue, 20 Oct 2020 12:00:00 +0900</pubDate>
+      <guid>94ad3e17d4bf3c421a211fa837cd898da13850ea</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/7b5f200cccc6747f4fead3ef55e83c43eb72e560</link>
+      <description>공포일자: 2020-08-11</description>
+      <pubDate>Tue, 11 Aug 2020 12:00:00 +0900</pubDate>
+      <guid>7b5f200cccc6747f4fead3ef55e83c43eb72e560</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/beea4e73afd29d5b057de222e610277f33a4d1e7</link>
+      <description>공포일자: 2019-12-10</description>
+      <pubDate>Tue, 10 Dec 2019 12:00:00 +0900</pubDate>
+      <guid>beea4e73afd29d5b057de222e610277f33a4d1e7</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/f8cf718c050b5d4aac41f6892826b0b029ebdc6f</link>
+      <description>공포일자: 2019-04-23</description>
+      <pubDate>Tue, 23 Apr 2019 12:00:00 +0900</pubDate>
+      <guid>f8cf718c050b5d4aac41f6892826b0b029ebdc6f</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/e42366612b03d03f7a479ab17cb0bc954b97d182</link>
+      <description>공포일자: 2019-04-02</description>
+      <pubDate>Tue, 02 Apr 2019 12:00:00 +0900</pubDate>
+      <guid>e42366612b03d03f7a479ab17cb0bc954b97d182</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/613df6226450491737d6094cfb6e4ed930d2c8a1</link>
+      <description>공포일자: 2018-12-18</description>
+      <pubDate>Tue, 18 Dec 2018 12:00:00 +0900</pubDate>
+      <guid>613df6226450491737d6094cfb6e4ed930d2c8a1</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/e85e9b8ab0c2318b06a7172d84f836117b7a00eb</link>
+      <description>공포일자: 2018-03-27</description>
+      <pubDate>Tue, 27 Mar 2018 12:00:00 +0900</pubDate>
+      <guid>e85e9b8ab0c2318b06a7172d84f836117b7a00eb</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/7c40a05345bef770f51b29f05179f320f951d3cb</link>
+      <description>공포일자: 2017-11-28</description>
+      <pubDate>Tue, 28 Nov 2017 12:00:00 +0900</pubDate>
+      <guid>7c40a05345bef770f51b29f05179f320f951d3cb</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/9e7e6f92549dbd9f3783085fbd31751f77481cf9</link>
+      <description>공포일자: 2017-07-26</description>
+      <pubDate>Wed, 26 Jul 2017 12:00:00 +0900</pubDate>
+      <guid>9e7e6f92549dbd9f3783085fbd31751f77481cf9</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/168077373235a17199a430af6893e7a05566a4b1</link>
+      <description>공포일자: 2017-01-17</description>
+      <pubDate>Tue, 17 Jan 2017 12:00:00 +0900</pubDate>
+      <guid>168077373235a17199a430af6893e7a05566a4b1</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/0429c443f98e94a47eb5bda348743162c79315b7</link>
+      <description>공포일자: 2016-12-20</description>
+      <pubDate>Tue, 20 Dec 2016 12:00:00 +0900</pubDate>
+      <guid>0429c443f98e94a47eb5bda348743162c79315b7</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/bd754bc9350fe19da99ba01ac78b56dc7b1df2be</link>
+      <description>공포일자: 2016-03-02</description>
+      <pubDate>Wed, 02 Mar 2016 12:00:00 +0900</pubDate>
+      <guid>bd754bc9350fe19da99ba01ac78b56dc7b1df2be</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/68121c21da4915c88dd2bf95fd02a0f5d263499a</link>
+      <description>공포일자: 2016-02-03</description>
+      <pubDate>Wed, 03 Feb 2016 12:00:00 +0900</pubDate>
+      <guid>68121c21da4915c88dd2bf95fd02a0f5d263499a</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/467d91b13e417fa7c5d71da8dfc751f09d5f3ddf</link>
+      <description>공포일자: 2016-01-27</description>
+      <pubDate>Wed, 27 Jan 2016 12:00:00 +0900</pubDate>
+      <guid>467d91b13e417fa7c5d71da8dfc751f09d5f3ddf</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/bfa29e7efb7f78277e5f59fed146b297cfa6cbad</link>
+      <description>공포일자: 2013-12-30</description>
+      <pubDate>Mon, 30 Dec 2013 12:00:00 +0900</pubDate>
+      <guid>bfa29e7efb7f78277e5f59fed146b297cfa6cbad</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/38434d3b8d1bbc4b326057aeb3bfed77677fa334</link>
+      <description>공포일자: 2013-03-23</description>
+      <pubDate>Sat, 23 Mar 2013 12:00:00 +0900</pubDate>
+      <guid>38434d3b8d1bbc4b326057aeb3bfed77677fa334</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/c8525d810c1a0ed744c22f809517ec9aa67e9679</link>
+      <description>공포일자: 2012-03-21</description>
+      <pubDate>Wed, 21 Mar 2012 12:00:00 +0900</pubDate>
+      <guid>c8525d810c1a0ed744c22f809517ec9aa67e9679</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/1e158247c539de5f04fd9befe178ae1f45062c61</link>
+      <description>공포일자: 2012-03-21</description>
+      <pubDate>Wed, 21 Mar 2012 12:00:00 +0900</pubDate>
+      <guid>1e158247c539de5f04fd9befe178ae1f45062c61</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/3b7a279503a85651ca321e767d7f6e71c5f305c0</link>
+      <description>공포일자: 2012-01-26</description>
+      <pubDate>Thu, 26 Jan 2012 12:00:00 +0900</pubDate>
+      <guid>3b7a279503a85651ca321e767d7f6e71c5f305c0</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/20e44d6f853dca1e2edd58f817aec659841f35c9</link>
+      <description>공포일자: 2011-12-31</description>
+      <pubDate>Sat, 31 Dec 2011 12:00:00 +0900</pubDate>
+      <guid>20e44d6f853dca1e2edd58f817aec659841f35c9</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/3468a386077a63c2b4d66a8211af4bbc5a5699c2</link>
+      <description>공포일자: 2011-09-15</description>
+      <pubDate>Thu, 15 Sep 2011 12:00:00 +0900</pubDate>
+      <guid>3468a386077a63c2b4d66a8211af4bbc5a5699c2</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/ef88a098073566d243761fb858f1237edf6d4aaa</link>
+      <description>공포일자: 2010-01-18</description>
+      <pubDate>Mon, 18 Jan 2010 12:00:00 +0900</pubDate>
+      <guid>ef88a098073566d243761fb858f1237edf6d4aaa</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/a63563d4f74b89214265a3f7e6c84fdb28d5a3dc</link>
+      <description>공포일자: 2009-12-29</description>
+      <pubDate>Tue, 29 Dec 2009 12:00:00 +0900</pubDate>
+      <guid>a63563d4f74b89214265a3f7e6c84fdb28d5a3dc</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/d68262b6a35cb59fc8cf0928826e50bc3d85efdc</link>
+      <description>공포일자: 2009-06-09</description>
+      <pubDate>Tue, 09 Jun 2009 12:00:00 +0900</pubDate>
+      <guid>d68262b6a35cb59fc8cf0928826e50bc3d85efdc</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/3f55ac6ba017fd7bda542dfbb53b21280b172acd</link>
+      <description>공포일자: 2008-03-21</description>
+      <pubDate>Fri, 21 Mar 2008 12:00:00 +0900</pubDate>
+      <guid>3f55ac6ba017fd7bda542dfbb53b21280b172acd</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/594b443adf22b8321e6bc83632925f0ed5488262</link>
+      <description>공포일자: 2008-02-29</description>
+      <pubDate>Fri, 29 Feb 2008 12:00:00 +0900</pubDate>
+      <guid>594b443adf22b8321e6bc83632925f0ed5488262</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/c49c64c6e56b5c9786473482de1585336c64c474</link>
+      <description>공포일자: 2007-12-14</description>
+      <pubDate>Fri, 14 Dec 2007 12:00:00 +0900</pubDate>
+      <guid>c49c64c6e56b5c9786473482de1585336c64c474</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/6ac43a8f085dac08c53cf58b5b26dd003785f890</link>
+      <description>공포일자: 2007-08-03</description>
+      <pubDate>Fri, 03 Aug 2007 12:00:00 +0900</pubDate>
+      <guid>6ac43a8f085dac08c53cf58b5b26dd003785f890</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/c7b17e2a39deab3347364a2bf79c45ba58903360</link>
+      <description>공포일자: 2007-05-17</description>
+      <pubDate>Thu, 17 May 2007 12:00:00 +0900</pubDate>
+      <guid>c7b17e2a39deab3347364a2bf79c45ba58903360</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/7a1b672c604c522d1a298973b70d1470c376e037</link>
+      <description>공포일자: 2007-04-27</description>
+      <pubDate>Fri, 27 Apr 2007 12:00:00 +0900</pubDate>
+      <guid>7a1b672c604c522d1a298973b70d1470c376e037</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/de1a59037129a309bdb828ae30d04ec7f00119b2</link>
+      <description>공포일자: 2007-04-11</description>
+      <pubDate>Wed, 11 Apr 2007 12:00:00 +0900</pubDate>
+      <guid>de1a59037129a309bdb828ae30d04ec7f00119b2</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/287d4801e97691c685f39944a0a715b786206fe4</link>
+      <description>공포일자: 2005-12-29</description>
+      <pubDate>Thu, 29 Dec 2005 12:00:00 +0900</pubDate>
+      <guid>287d4801e97691c685f39944a0a715b786206fe4</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/1758e3650ca4c8ea96527bd6cf2b0ab757499fac</link>
+      <description>공포일자: 2005-12-07</description>
+      <pubDate>Wed, 07 Dec 2005 12:00:00 +0900</pubDate>
+      <guid>1758e3650ca4c8ea96527bd6cf2b0ab757499fac</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/7cef790e64ebe203ace831f01c45265a18b23a31</link>
+      <description>공포일자: 2005-03-24</description>
+      <pubDate>Thu, 24 Mar 2005 12:00:00 +0900</pubDate>
+      <guid>7cef790e64ebe203ace831f01c45265a18b23a31</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/59309bbd39277de3fe1dad9e583f7b70009ec50a</link>
+      <description>공포일자: 2004-02-09</description>
+      <pubDate>Mon, 09 Feb 2004 12:00:00 +0900</pubDate>
+      <guid>59309bbd39277de3fe1dad9e583f7b70009ec50a</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/d25e3be815d64fdf12e4faa6d93d5e21961d0b51</link>
+      <description>공포일자: 2004-01-29</description>
+      <pubDate>Thu, 29 Jan 2004 12:00:00 +0900</pubDate>
+      <guid>d25e3be815d64fdf12e4faa6d93d5e21961d0b51</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/61511303b93fcb17f138de6a5c46eb597e518d19</link>
+      <description>공포일자: 2002-08-26</description>
+      <pubDate>Mon, 26 Aug 2002 12:00:00 +0900</pubDate>
+      <guid>61511303b93fcb17f138de6a5c46eb597e518d19</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/5251e85e226d6c125996da4b6d5ff3165cf0b306</link>
+      <description>공포일자: 2001-01-29</description>
+      <pubDate>Mon, 29 Jan 2001 12:00:00 +0900</pubDate>
+      <guid>5251e85e226d6c125996da4b6d5ff3165cf0b306</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/c7fd9f500ac4782fdcb84837ed8fc961ed892315</link>
+      <description>공포일자: 2000-01-28</description>
+      <pubDate>Fri, 28 Jan 2000 12:00:00 +0900</pubDate>
+      <guid>c7fd9f500ac4782fdcb84837ed8fc961ed892315</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/9e124205e39e715c7e6e4a700ca79eae09163aae</link>
+      <description>공포일자: 1998-12-31</description>
+      <pubDate>Thu, 31 Dec 1998 12:00:00 +0900</pubDate>
+      <guid>9e124205e39e715c7e6e4a700ca79eae09163aae</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/a69b23757b8d866afe3653663ad58adf3347377a</link>
+      <description>공포일자: 1997-12-13</description>
+      <pubDate>Sat, 13 Dec 1997 12:00:00 +0900</pubDate>
+      <guid>a69b23757b8d866afe3653663ad58adf3347377a</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/520394437b354ea61cfc03abce0527d4025cf95b</link>
+      <description>공포일자: 1995-12-29</description>
+      <pubDate>Fri, 29 Dec 1995 12:00:00 +0900</pubDate>
+      <guid>520394437b354ea61cfc03abce0527d4025cf95b</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/c23aaa741947df9f0c1ed1e6ac7982d2cd0f85a0</link>
+      <description>공포일자: 1991-03-08</description>
+      <pubDate>Fri, 08 Mar 1991 12:00:00 +0900</pubDate>
+      <guid>c23aaa741947df9f0c1ed1e6ac7982d2cd0f85a0</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/fffe4b9c77084b9aa1a933fb61eeea7c50566ef7</link>
+      <description>공포일자: 1990-12-27</description>
+      <pubDate>Thu, 27 Dec 1990 12:00:00 +0900</pubDate>
+      <guid>fffe4b9c77084b9aa1a933fb61eeea7c50566ef7</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/0ba494662a6bba97a3936f0b1507747dff0dcbe7</link>
+      <description>공포일자: 1981-02-28</description>
+      <pubDate>Sat, 28 Feb 1981 12:00:00 +0900</pubDate>
+      <guid>0ba494662a6bba97a3936f0b1507747dff0dcbe7</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/9fe56fce18f28005d37060a0e63b86905cbfd01a</link>
+      <description>공포일자: 1977-07-23</description>
+      <pubDate>Sat, 23 Jul 1977 12:00:00 +0900</pubDate>
+      <guid>9fe56fce18f28005d37060a0e63b86905cbfd01a</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 학교보건법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/20d0c3ca8c61f62ce1cabc12e368701990a68d08</link>
+      <description>공포일자: 1967-03-30</description>
+      <pubDate>Thu, 01 Jan 1970 09:00:00 +0900</pubDate>
+      <guid>20d0c3ca8c61f62ce1cabc12e368701990a68d08</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 희귀질환관리법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/505d3f3b72ae7fe5b80c78c21167a756d63eb363</link>
+      <description>공포일자: 2024-12-03</description>
+      <pubDate>Tue, 03 Dec 2024 12:00:00 +0900</pubDate>
+      <guid>505d3f3b72ae7fe5b80c78c21167a756d63eb363</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 희귀질환관리법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/70b0f7c84add58a51e9f92dcd7b18b0e00101b4e</link>
+      <description>공포일자: 2024-02-20</description>
+      <pubDate>Tue, 20 Feb 2024 12:00:00 +0900</pubDate>
+      <guid>70b0f7c84add58a51e9f92dcd7b18b0e00101b4e</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 희귀질환관리법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/1c3a8c49743aa66f5b474f7b78fc8b4d33285889</link>
+      <description>공포일자: 2023-12-26</description>
+      <pubDate>Tue, 26 Dec 2023 12:00:00 +0900</pubDate>
+      <guid>1c3a8c49743aa66f5b474f7b78fc8b4d33285889</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 희귀질환관리법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/af630656fc697ff91d28eae1ad0fa431fc121903</link>
+      <description>공포일자: 2023-06-13</description>
+      <pubDate>Tue, 13 Jun 2023 12:00:00 +0900</pubDate>
+      <guid>af630656fc697ff91d28eae1ad0fa431fc121903</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 희귀질환관리법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/3f15332e2ed50ff1d7c7f2c2cd41a5b6f644d0f9</link>
+      <description>공포일자: 2020-08-11</description>
+      <pubDate>Tue, 11 Aug 2020 12:00:00 +0900</pubDate>
+      <guid>3f15332e2ed50ff1d7c7f2c2cd41a5b6f644d0f9</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 희귀질환관리법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/d53549dd6d90ecfc2df85bb4462659addcda2108</link>
+      <description>공포일자: 2019-04-30</description>
+      <pubDate>Tue, 30 Apr 2019 12:00:00 +0900</pubDate>
+      <guid>d53549dd6d90ecfc2df85bb4462659addcda2108</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 희귀질환관리법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/6474e8f550abcab82f4cf4fd262ea6eeca032e15</link>
+      <description>공포일자: 2015-12-29</description>
+      <pubDate>Tue, 29 Dec 2015 12:00:00 +0900</pubDate>
+      <guid>6474e8f550abcab82f4cf4fd262ea6eeca032e15</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증 예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/7e9bda6c923cc7e0480579e3d3b94e0698c64de5</link>
+      <description>공포일자: 2020-08-11</description>
+      <pubDate>Tue, 11 Aug 2020 12:00:00 +0900</pubDate>
+      <guid>7e9bda6c923cc7e0480579e3d3b94e0698c64de5</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증 예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/cc6b411587bdfa541347289c6ae34c83593fee38</link>
+      <description>공포일자: 2018-03-27</description>
+      <pubDate>Tue, 27 Mar 2018 12:00:00 +0900</pubDate>
+      <guid>cc6b411587bdfa541347289c6ae34c83593fee38</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증 예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/4f22037d2a1cda7266b23f4d321bce267695b9e0</link>
+      <description>공포일자: 2017-04-18</description>
+      <pubDate>Tue, 18 Apr 2017 12:00:00 +0900</pubDate>
+      <guid>4f22037d2a1cda7266b23f4d321bce267695b9e0</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증 예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/f41a1e09d31afd72b7c87dfc0b5243ea1a0e0952</link>
+      <description>공포일자: 2013-04-05</description>
+      <pubDate>Fri, 05 Apr 2013 12:00:00 +0900</pubDate>
+      <guid>f41a1e09d31afd72b7c87dfc0b5243ea1a0e0952</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증 예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/d9687f0152f88685bcbd89f17f179a7df38291e1</link>
+      <description>공포일자: 2010-01-18</description>
+      <pubDate>Mon, 18 Jan 2010 12:00:00 +0900</pubDate>
+      <guid>d9687f0152f88685bcbd89f17f179a7df38291e1</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증 예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/46888a8cc43c09c516d448395a7009433f17d240</link>
+      <description>공포일자: 2009-12-29</description>
+      <pubDate>Tue, 29 Dec 2009 12:00:00 +0900</pubDate>
+      <guid>46888a8cc43c09c516d448395a7009433f17d240</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증 예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/c38ca10d596d689982b4c270ee703e5fe56ef5b0</link>
+      <description>공포일자: 2008-03-21</description>
+      <pubDate>Fri, 21 Mar 2008 12:00:00 +0900</pubDate>
+      <guid>c38ca10d596d689982b4c270ee703e5fe56ef5b0</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증 예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/51092af00c47df444f363ece3a509db7a4104ec7</link>
+      <description>공포일자: 2008-02-29</description>
+      <pubDate>Fri, 29 Feb 2008 12:00:00 +0900</pubDate>
+      <guid>51092af00c47df444f363ece3a509db7a4104ec7</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증 예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/9319c5890715c54a3b1292abf9b1217ddcc11a88</link>
+      <description>공포일자: 2007-05-17</description>
+      <pubDate>Thu, 17 May 2007 12:00:00 +0900</pubDate>
+      <guid>9319c5890715c54a3b1292abf9b1217ddcc11a88</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증 예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/0c5d70b53421e40733c7b38ce75518c81650723a</link>
+      <description>공포일자: 2005-03-31</description>
+      <pubDate>Thu, 31 Mar 2005 12:00:00 +0900</pubDate>
+      <guid>0c5d70b53421e40733c7b38ce75518c81650723a</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/c26e7a9168acd254996b7d766dd2dafe39cdce82</link>
+      <description>공포일자: 1999-02-08</description>
+      <pubDate>Mon, 08 Feb 1999 12:00:00 +0900</pubDate>
+      <guid>c26e7a9168acd254996b7d766dd2dafe39cdce82</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/cfc71a4e38ce3957545823a9c9dc0516645ccd16</link>
+      <description>공포일자: 1997-12-13</description>
+      <pubDate>Sat, 13 Dec 1997 12:00:00 +0900</pubDate>
+      <guid>cfc71a4e38ce3957545823a9c9dc0516645ccd16</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/8b8d10da204de2ef13c349161011bc7f69384b9b</link>
+      <description>공포일자: 1995-12-30</description>
+      <pubDate>Sat, 30 Dec 1995 12:00:00 +0900</pubDate>
+      <guid>8b8d10da204de2ef13c349161011bc7f69384b9b</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/2424969c119014c7291f5966319a85f01234228f</link>
+      <description>공포일자: 1988-12-31</description>
+      <pubDate>Sat, 31 Dec 1988 12:00:00 +0900</pubDate>
+      <guid>2424969c119014c7291f5966319a85f01234228f</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후천성면역결핍증예방법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/bc131e744a5ef919c7d51d7af0df7c53f96c87f0</link>
+      <description>공포일자: 1987-11-28</description>
+      <pubDate>Sat, 28 Nov 1987 12:00:00 +0900</pubDate>
+      <guid>bc131e744a5ef919c7d51d7af0df7c53f96c87f0</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후계농어업인 및 청년농어업인 육성ㆍ지원에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/bf3b20a08e5c38e173f0c9b853e991d8df2862f4</link>
+      <description>공포일자: 2026-03-31</description>
+      <pubDate>Tue, 31 Mar 2026 12:00:00 +0900</pubDate>
+      <guid>bf3b20a08e5c38e173f0c9b853e991d8df2862f4</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후계농어업인 및 청년농어업인 육성ㆍ지원에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/0de1f1b3be79729bf65d3a07661d35fcc915e484</link>
+      <description>공포일자: 2020-05-19</description>
+      <pubDate>Tue, 19 May 2020 12:00:00 +0900</pubDate>
+      <guid>0de1f1b3be79729bf65d3a07661d35fcc915e484</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후견등기에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/c7a703314b7bfe350e4b67c24cfd72ab0e566b3b</link>
+      <description>공포일자: 2017-10-31</description>
+      <pubDate>Tue, 31 Oct 2017 12:00:00 +0900</pubDate>
+      <guid>c7a703314b7bfe350e4b67c24cfd72ab0e566b3b</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 후견등기에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/67512170b32fbde27e7474d493e07d2a3341259d</link>
+      <description>공포일자: 2013-04-05</description>
+      <pubDate>Fri, 05 Apr 2013 12:00:00 +0900</pubDate>
+      <guid>67512170b32fbde27e7474d493e07d2a3341259d</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 효행 장려 및 지원에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/6d4b37a91d40c6986584430bfe4082113db59389</link>
+      <description>공포일자: 2017-12-12</description>
+      <pubDate>Tue, 12 Dec 2017 12:00:00 +0900</pubDate>
+      <guid>6d4b37a91d40c6986584430bfe4082113db59389</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 효행 장려 및 지원에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/486d06e2b3c16df5bc89d7c165727c2ecd8e8b0b</link>
+      <description>공포일자: 2016-02-03</description>
+      <pubDate>Wed, 03 Feb 2016 12:00:00 +0900</pubDate>
+      <guid>486d06e2b3c16df5bc89d7c165727c2ecd8e8b0b</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 효행 장려 및 지원에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/a9a91c59893b8a7c3d15eb58d63ec9632de74285</link>
+      <description>공포일자: 2011-06-07</description>
+      <pubDate>Tue, 07 Jun 2011 12:00:00 +0900</pubDate>
+      <guid>a9a91c59893b8a7c3d15eb58d63ec9632de74285</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 효행 장려 및 지원에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/bdea0995f881f4547e7400f7f64be6b064502507</link>
+      <description>공포일자: 2007-08-03</description>
+      <pubDate>Fri, 03 Aug 2007 12:00:00 +0900</pubDate>
+      <guid>bdea0995f881f4547e7400f7f64be6b064502507</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원 등의 책임에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/8454959018aff99518d5e02847eca2aab095f441</link>
+      <description>공포일자: 2025-10-01</description>
+      <pubDate>Wed, 01 Oct 2025 12:00:00 +0900</pubDate>
+      <guid>8454959018aff99518d5e02847eca2aab095f441</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원 등의 책임에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/e762670b237e4149069ad04bf3186636f7fc3756</link>
+      <description>공포일자: 2016-05-29</description>
+      <pubDate>Sun, 29 May 2016 12:00:00 +0900</pubDate>
+      <guid>e762670b237e4149069ad04bf3186636f7fc3756</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원 등의 책임에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/069b030683c4b70d9a815793d80923a72696e96f</link>
+      <description>공포일자: 2014-05-28</description>
+      <pubDate>Wed, 28 May 2014 12:00:00 +0900</pubDate>
+      <guid>069b030683c4b70d9a815793d80923a72696e96f</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원 등의 책임에 관한 법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/0726d5304d944326a8f4a282f069814729258d56</link>
+      <description>공포일자: 2009-03-25</description>
+      <pubDate>Wed, 25 Mar 2009 12:00:00 +0900</pubDate>
+      <guid>0726d5304d944326a8f4a282f069814729258d56</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원등의책임에관한법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/da05ab53c566454e40b67530b57fd09161b7cfb2</link>
+      <description>공포일자: 2008-02-29</description>
+      <pubDate>Fri, 29 Feb 2008 12:00:00 +0900</pubDate>
+      <guid>da05ab53c566454e40b67530b57fd09161b7cfb2</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원등의책임에관한법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/7d45dd7bb1052a95f3feccb27c76855335f7cde0</link>
+      <description>공포일자: 2007-10-17</description>
+      <pubDate>Wed, 17 Oct 2007 12:00:00 +0900</pubDate>
+      <guid>7d45dd7bb1052a95f3feccb27c76855335f7cde0</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원등의책임에관한법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/22a67743a7cbd4f017f5fa5e8931796a0f259b57</link>
+      <description>공포일자: 2006-10-04</description>
+      <pubDate>Wed, 04 Oct 2006 12:00:00 +0900</pubDate>
+      <guid>22a67743a7cbd4f017f5fa5e8931796a0f259b57</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원등의책임에관한법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/880cf1a9a357c0489c2549d9ec117942903a2f9e</link>
+      <description>공포일자: 2002-12-30</description>
+      <pubDate>Mon, 30 Dec 2002 12:00:00 +0900</pubDate>
+      <guid>880cf1a9a357c0489c2549d9ec117942903a2f9e</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원등의책임에관한법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/cc4f1976a662392a7d68072ae52161a5056225ba</link>
+      <description>공포일자: 2001-04-07</description>
+      <pubDate>Sat, 07 Apr 2001 12:00:00 +0900</pubDate>
+      <guid>cc4f1976a662392a7d68072ae52161a5056225ba</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원등의책임에관한법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/93bcafc4c013fb0594768e20c3931f3d26da8209</link>
+      <description>공포일자: 1997-12-13</description>
+      <pubDate>Sat, 13 Dec 1997 12:00:00 +0900</pubDate>
+      <guid>93bcafc4c013fb0594768e20c3931f3d26da8209</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원등의책임에관한법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/7a676cfe3094748a15c14c153eab767408d51ed6</link>
+      <description>공포일자: 1981-12-31</description>
+      <pubDate>Thu, 31 Dec 1981 12:00:00 +0900</pubDate>
+      <guid>7a676cfe3094748a15c14c153eab767408d51ed6</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원등의책임에관한법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/594cb03d2b1865a828d8ea2e8ed1a4773495ed60</link>
+      <description>공포일자: 1962-02-07</description>
+      <pubDate>Thu, 01 Jan 1970 09:00:00 +0900</pubDate>
+      <guid>594cb03d2b1865a828d8ea2e8ed1a4773495ed60</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 회계관계직원등의책임에관한법률</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/161544318cee6ae67ea9ab3ecc20ca3df2c6c2fc</link>
+      <description>공포일자: 1957-07-25</description>
+      <pubDate>Thu, 01 Jan 1970 09:00:00 +0900</pubDate>
+      <guid>161544318cee6ae67ea9ab3ecc20ca3df2c6c2fc</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 환자안전법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/5b96ddc6f7b9c8cdb39aa485a4f3b9df84796c23</link>
+      <description>공포일자: 2026-04-28</description>
+      <pubDate>Tue, 28 Apr 2026 12:00:00 +0900</pubDate>
+      <guid>5b96ddc6f7b9c8cdb39aa485a4f3b9df84796c23</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 환자안전법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/9421419b3b6581826be6135f237b8c7ed8ad86aa</link>
+      <description>공포일자: 2024-09-20</description>
+      <pubDate>Fri, 20 Sep 2024 12:00:00 +0900</pubDate>
+      <guid>9421419b3b6581826be6135f237b8c7ed8ad86aa</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+    <item>
+      <title>갱신: 환자안전법</title>
+      <link>https://github.com/baejaeho18/Legalize-kr/commit/8eb2a93a3965edab4d7ee448a1f4268707b68c3a</link>
+      <description>공포일자: 2020-01-29</description>
+      <pubDate>Wed, 29 Jan 2020 12:00:00 +0900</pubDate>
+      <guid>8eb2a93a3965edab4d7ee448a1f4268707b68c3a</guid>
+      <category>갱신</category>
+      <author>legalize-kr</author>
+    </item>
+  </channel>
+</rss>
